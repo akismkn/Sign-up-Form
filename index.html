@@ -10,7 +10,7 @@
 
 <body>
     <div class="left-container">
-        <div></div> 
+        <div></div>
         <div class="area">
             <h1>Sign Up</h1>
         </div>
@@ -30,20 +30,43 @@
             together!
         </h3>
         <form action="post">
-            <h3>Make it real!</h3>
-            <label for="user-first-name">FIRST NAME</label>
-            <input id="user-first-name" name="user-first-name" type="text">
-            <label for="user-last-name">LAST NAME</label>
-            <input id="user-last-name" name="user-last-name" type="text">
-            <label for="user-email">EMAIL</label>
-            <input type="email" name="user-email" id="user-email">
-            <label for="user-phone">PHONE NUMBER</label>
-            <input type="number" name="user-phone" id="user-phone">
-            <label for="user-password">PASSWORD</label>
-            <input type="text" name="user-password" id="user-password">
-            <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input type="text" name="confirm-password" id="confirm-password">
+            <h3>Let's do this!</h3>
+            <div class="row">
+                <p>
+                    <label for="user-first-name">FIRST NAME</label>
+                    <input id="user-first-name" name="user-first-name" type="text" required>
+                </p>
+                <p>
+                    <label for="user-last-name">LAST NAME</label>
+                    <input id="user-last-name" name="user-last-name" type="text" required>
+                </p>
+            </div>
+            <div class="row">
+                <p>
+                    <label for="user-email">EMAIL</label>
+                    <input type="email" name="user-email" id="user-email" required>
+                </p>
+                <p>
+                    <label for="user-phone">PHONE NUMBER</label>
+                    <input type="number" name="user-phone" id="user-phone" required>
+                </p>
+            </div>
+            <div class="row">
+                <p>
+                    <label for="user-password">PASSWORD</label>
+                    <input class="error" type="text" name="user-password" id="user-password" required>
+                </p>
+                <p>
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input  type="text" name="confirm-password" id="confirm-password" required>
+                </p>
+            </div>
+            <div class="down">
+                <button class="submit">Create Account</button>
+                <par>Already have an account? <a href="">Log in</a></par>
+            </div>
         </form>
+
     </div>
 </body>
 
